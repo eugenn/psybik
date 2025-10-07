@@ -1,4 +1,4 @@
-## 3×3 Rubik's Cube Web Game
+## 3×3 Psybik's Cube Web Game (Psychedelic Rubik's Cube)
 
 A touchpad-friendly 3D Rubik's cube built with Three.js. Faces can use sliced images or procedural fractal art. Includes Setup and Play modes, scramble/reset, and an animated Assemble (solve) feature.
 
