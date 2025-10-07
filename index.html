@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3x3 Psybik's Cube (Psydelic Rubik's Cube)</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="overlay">
+        <div class="left">
+          <button id="btn-scramble" title="Scramble the cube">Scramble</button>
+          <button id="btn-reset" title="Reset to solved">Reset</button>
+          <button id="btn-solve" title="Solve with animation">Soplver</button>
+          <button id="btn-setup" title="Toggle Setup mode">Start</button>
+          <button id="btn-play" title="Enter Play mode">Play</button>
+          <span id="setup-count" class="counter" aria-live="polite"></span>
+        </div>
+        <div class="right help">
+          <div><strong>Orbit</strong>: drag on empty space or use touchpad</div>
+          <div><strong>Turn face</strong>: drag on a face sticker</div>
+          <div><strong>Half-turn</strong>: double-click a face sticker</div>
+          <div><strong>Zoom</strong>: pinch or scroll</div>
+        </div>
+      </div>
+      <div id="progress-panel" aria-live="polite">
+        <div class="label">Closeness</div>
+        <div class="bar"><div class="fill" style="width:0%"></div></div>
+        <div class="value" id="progress-value">0%</div>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+  </html>
+
+
